@@ -465,6 +465,12 @@ button {
     margin-bottom: 48px;
 }
 
+/* @media screen and (max-width: 350px) {
+  .sab-title {
+    max-width: 100%;
+  }
+} */
+
 .title{
     color: var(--black);
     font-size: 20px;
@@ -598,6 +604,62 @@ button {
     overflow: hidden; 
 }
 
+@media screen and (min-width: 768px) {
+  .logo-footer {
+    text-align: start;
+  }
+  .footer-content {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+  }
+  .logo-foot {
+    max-width: 264px;
+    margin-left: 0;
+    margin-right: 24px;
+  }
+  .title-footer {
+    text-align: start;
+  }
+  .content-footer-svg {
+    margin-bottom: 0;
+  }
+  .subscribe-input {
+    align-items: baseline;
+  }
+  .form-email {
+    margin-right: 24px;
+    width: 264px;
+  }
+  .subscribe.soc-text {
+    text-align: start;
+  }
+}
+
+
+@media screen and (min-width: 1200px) {
+  .footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .footer-content {
+    flex-wrap: nowrap;
+  }
+
+  .logo-foot {
+    margin-right: 120px;
+    margin-bottom: 0;
+  }
+
+  .content-footer-svg {
+    margin-right: 80px;
+  }
+}
+
+
+
+
 .backdrop-modal {
   position: fixed;
   background-color: rgba(46, 47, 66, 0.4);
@@ -728,33 +790,13 @@ button {
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* .modal-checkbox-hid {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 16px;
-  height: 16px;
-  border: 1.25px solid var(--black);
-  border-radius: 2px;
-  margin-right: 8px;
-  cursor: pointer;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-} */
+
 
 .modal-checkbox-icon {
   opacity: 0;
 }
 
-/* .modal-form-checkbox:checked+.modal-checkbox-hid>.modal-checkbox-icon {
-  opacity: 1;
-} */
 
-/* .modal-form-checkbox:checked+.modal-checkbox-hid {
-  border-color: var(--link);
-  background-color: var(--link);
-  fill: var(--button);
-  transition: background-color, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-} */
 
 .modal-check {
   display: flex;
