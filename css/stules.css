@@ -70,11 +70,24 @@ button {
 }
 
 .container{
-    width: 1158px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
+  min-width: 320px;
+  max-width: 428px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width:768px) {
+.container{
+max-width: 738px;
+}
+}
+
+@media screen and (min-width:1200px) {
+.container{
+max-width: 1158px;
+}
 }
 
 .socials-icon{
@@ -465,12 +478,6 @@ button {
     margin-bottom: 48px;
 }
 
-/* @media screen and (max-width: 350px) {
-  .sab-title {
-    max-width: 100%;
-  }
-} */
-
 .title{
     color: var(--black);
     font-size: 20px;
@@ -524,13 +531,17 @@ button {
 }
 
 .footer-content{
-    padding: 100px 0;
-    display: flex;
-    gap: 120px;
+    
+}
+
+.logo-foot{ 
+  padding: 96px 80px 72px 80px;
 }
 
 .advice{
     color: var(--advice);
+    font-family: 'Roboto';
+    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -603,61 +614,6 @@ button {
     clip: rect(0 0 0 0); 
     overflow: hidden; 
 }
-
-@media screen and (min-width: 768px) {
-  .logo-footer {
-    text-align: start;
-  }
-  .footer-content {
-    display: flex;
-    align-items: baseline;
-    flex-wrap: wrap;
-  }
-  .logo-foot {
-    max-width: 264px;
-    margin-left: 0;
-    margin-right: 24px;
-  }
-  .title-footer {
-    text-align: start;
-  }
-  .content-footer-svg {
-    margin-bottom: 0;
-  }
-  .subscribe-input {
-    align-items: baseline;
-  }
-  .form-email {
-    margin-right: 24px;
-    width: 264px;
-  }
-  .subscribe.soc-text {
-    text-align: start;
-  }
-}
-
-
-@media screen and (min-width: 1200px) {
-  .footer {
-    padding-top: 100px;
-    padding-bottom: 100px;
-  }
-
-  .footer-content {
-    flex-wrap: nowrap;
-  }
-
-  .logo-foot {
-    margin-right: 120px;
-    margin-bottom: 0;
-  }
-
-  .content-footer-svg {
-    margin-right: 80px;
-  }
-}
-
-
 
 
 .backdrop-modal {
